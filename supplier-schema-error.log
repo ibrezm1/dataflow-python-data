@@ -1,0 +1,66 @@
+nohup: ignoring input
+/home/student_03_1e225e0c6442/professional-services/examples/dataflow-python-examples/dataflow-env/lib/python3.7/site-packages/apache_beam/__init__.py:84: UserWarning: Some syntactic constructs of Python 3 are not yet fully supported by Apache Beam.
+  'Some syntactic constructs of Python 3 are not yet fully supported by '
+INFO:oauth2client.transport:Attempting refresh to obtain initial access_token
+INFO:oauth2client.transport:Attempting refresh to obtain initial access_token
+/home/student_03_1e225e0c6442/professional-services/examples/dataflow-python-examples/dataflow-env/lib/python3.7/site-packages/apache_beam/runners/dataflow/dataflow_runner.py:687: BeamDeprecationWarning: BigQuerySink is deprecated since 2.11.0. Use WriteToBigQuery instead.
+  kms_key=transform.kms_key))
+INFO:oauth2client.transport:Attempting refresh to obtain initial access_token
+INFO:oauth2client.transport:Attempting refresh to obtain initial access_token
+INFO:root:Starting GCS upload to gs://qwiklabs-gcp-01-50b8d970598f/test/beamapp-student031e225e0c6442-1128083705-267694.1638088625.267881/pipeline.pb...
+INFO:oauth2client.transport:Attempting refresh to obtain initial access_token
+INFO:oauth2client.transport:Attempting refresh to obtain initial access_token
+INFO:root:Completed GCS upload to gs://qwiklabs-gcp-01-50b8d970598f/test/beamapp-student031e225e0c6442-1128083705-267694.1638088625.267881/pipeline.pb in 1 seconds.
+INFO:root:Starting GCS upload to gs://qwiklabs-gcp-01-50b8d970598f/test/beamapp-student031e225e0c6442-1128083705-267694.1638088625.267881/requirements.txt...
+INFO:root:Completed GCS upload to gs://qwiklabs-gcp-01-50b8d970598f/test/beamapp-student031e225e0c6442-1128083705-267694.1638088625.267881/requirements.txt in 0 seconds.
+INFO:root:Executing command: ['/home/student_03_1e225e0c6442/professional-services/examples/dataflow-python-examples/dataflow-env/bin/python', '-m', 'pip', 'download', '--dest', '/tmp/dataflow-requirements-cache', '-r', '/home/student_03_1e225e0c6442/professional-services/examples/dataflow-python-examples/requirements.txt', '--exists-action', 'i', '--no-binary', ':all:']
+INFO:root:Starting GCS upload to gs://qwiklabs-gcp-01-50b8d970598f/test/beamapp-student031e225e0c6442-1128083705-267694.1638088625.267881/cachetools-4.2.4.tar.gz...
+INFO:oauth2client.transport:Refreshing due to a 401 (attempt 1/2)
+Traceback (most recent call last):
+  File "/home/student_03_1e225e0c6442/professional-services/examples/dataflow-python-examples/data_generation_for_benchmarking.py", line 536, in <module>
+    run()
+  File "/home/student_03_1e225e0c6442/professional-services/examples/dataflow-python-examples/data_generation_for_benchmarking.py", line 527, in run
+    p.run().wait_until_finish()
+  File "/home/student_03_1e225e0c6442/professional-services/examples/dataflow-python-examples/dataflow-env/lib/python3.7/site-packages/apache_beam/pipeline.py", line 419, in run
+    return self.runner.run_pipeline(self, self._options)
+  File "/home/student_03_1e225e0c6442/professional-services/examples/dataflow-python-examples/dataflow-env/lib/python3.7/site-packages/apache_beam/runners/dataflow/dataflow_runner.py", line 476, in run_pipeline
+    self.dataflow_client.create_job(self.job), self)
+  File "/home/student_03_1e225e0c6442/professional-services/examples/dataflow-python-examples/dataflow-env/lib/python3.7/site-packages/apache_beam/utils/retry.py", line 197, in wrapper
+    return fun(*args, **kwargs)
+  File "/home/student_03_1e225e0c6442/professional-services/examples/dataflow-python-examples/dataflow-env/lib/python3.7/site-packages/apache_beam/runners/dataflow/internal/apiclient.py", line 523, in create_job
+    self.create_job_description(job)
+  File "/home/student_03_1e225e0c6442/professional-services/examples/dataflow-python-examples/dataflow-env/lib/python3.7/site-packages/apache_beam/runners/dataflow/internal/apiclient.py", line 553, in create_job_description
+    resources = self._stage_resources(job.options)
+  File "/home/student_03_1e225e0c6442/professional-services/examples/dataflow-python-examples/dataflow-env/lib/python3.7/site-packages/apache_beam/runners/dataflow/internal/apiclient.py", line 483, in _stage_resources
+    staging_location=google_cloud_options.staging_location)
+  File "/home/student_03_1e225e0c6442/professional-services/examples/dataflow-python-examples/dataflow-env/lib/python3.7/site-packages/apache_beam/runners/portability/stager.py", line 171, in stage_job_resources
+    pkg, FileSystems.join(staging_location, os.path.basename(pkg)))
+  File "/home/student_03_1e225e0c6442/professional-services/examples/dataflow-python-examples/dataflow-env/lib/python3.7/site-packages/apache_beam/runners/dataflow/internal/apiclient.py", line 811, in stage_artifact
+    artifact_name)
+  File "/home/student_03_1e225e0c6442/professional-services/examples/dataflow-python-examples/dataflow-env/lib/python3.7/site-packages/apache_beam/utils/retry.py", line 197, in wrapper
+    return fun(*args, **kwargs)
+  File "/home/student_03_1e225e0c6442/professional-services/examples/dataflow-python-examples/dataflow-env/lib/python3.7/site-packages/apache_beam/runners/dataflow/internal/apiclient.py", line 470, in _gcs_file_copy
+    self.stage_file(to_folder, to_name, f)
+  File "/home/student_03_1e225e0c6442/professional-services/examples/dataflow-python-examples/dataflow-env/lib/python3.7/site-packages/apache_beam/runners/dataflow/internal/apiclient.py", line 504, in stage_file
+    response = self._storage_client.objects.Insert(request, upload=upload)
+  File "/home/student_03_1e225e0c6442/professional-services/examples/dataflow-python-examples/dataflow-env/lib/python3.7/site-packages/apache_beam/io/gcp/internal/clients/storage/storage_v1_client.py", line 1154, in Insert
+    upload=upload, upload_config=upload_config)
+  File "/home/student_03_1e225e0c6442/professional-services/examples/dataflow-python-examples/dataflow-env/lib/python3.7/site-packages/apitools/base/py/base_api.py", line 729, in _RunMethod
+    http, http_request, **opts)
+  File "/home/student_03_1e225e0c6442/professional-services/examples/dataflow-python-examples/dataflow-env/lib/python3.7/site-packages/apitools/base/py/http_wrapper.py", line 356, in MakeRequest
+    max_retry_wait, total_wait_sec))
+  File "/home/student_03_1e225e0c6442/professional-services/examples/dataflow-python-examples/dataflow-env/lib/python3.7/site-packages/apitools/base/py/http_wrapper.py", line 304, in HandleExceptionsAndRebuildHttpConnections
+    raise retry_args.exc
+  File "/home/student_03_1e225e0c6442/professional-services/examples/dataflow-python-examples/dataflow-env/lib/python3.7/site-packages/apitools/base/py/http_wrapper.py", line 346, in MakeRequest
+    check_response_func=check_response_func)
+  File "/home/student_03_1e225e0c6442/professional-services/examples/dataflow-python-examples/dataflow-env/lib/python3.7/site-packages/apitools/base/py/http_wrapper.py", line 396, in _MakeRequestNoRetry
+    redirections=redirections, connection_type=connection_type)
+  File "/home/student_03_1e225e0c6442/professional-services/examples/dataflow-python-examples/dataflow-env/lib/python3.7/site-packages/oauth2client/transport.py", line 169, in new_request
+    redirections, connection_type)
+  File "/home/student_03_1e225e0c6442/professional-services/examples/dataflow-python-examples/dataflow-env/lib/python3.7/site-packages/oauth2client/transport.py", line 180, in new_request
+    credentials._refresh(orig_request_method)
+  File "/home/student_03_1e225e0c6442/professional-services/examples/dataflow-python-examples/dataflow-env/lib/python3.7/site-packages/oauth2client/contrib/gce.py", line 136, in _refresh
+    http_request, service_account=self.service_account_email)
+  File "/home/student_03_1e225e0c6442/professional-services/examples/dataflow-python-examples/dataflow-env/lib/python3.7/site-packages/oauth2client/contrib/_metadata.py", line 122, in get_token
+    seconds=token_json['expires_in'])
+TypeError: string indices must be integers
