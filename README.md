@@ -2,6 +2,17 @@
 This repo contains several examples of the Dataflow python API.  The examples are solutions to common use cases we see
 in the field. [qwicklabs](https://googlecourses.qwiklabs.com/focuses/17659?catalog_rank=%7B%22rank%22%3A49%2C%22num_filters%22%3A1%2C%22has_search%22%3Atrue%7D&parent=catalog&search_id=14687389)
 
+Others need to complete
+https://googlecourses.qwiklabs.com/quests/25
+https://googlecourses.qwiklabs.com/focuses/17659?catalog_rank=%7B%22rank%22%3A1%2C%22num_filters%22%3A1%2C%22has_search%22%3Atrue%7D&parent=catalog&search_id=14689211
+https://googlecourses.qwiklabs.com/focuses/18082?catalog_rank=%7B%22rank%22%3A71%2C%22num_filters%22%3A1%2C%22has_search%22%3Atrue%7D&parent=catalog&search_id=14687397
+https://googlecourses.qwiklabs.com/focuses/18084?catalog_rank=%7B%22rank%22%3A80%2C%22num_filters%22%3A1%2C%22has_search%22%3Atrue%7D&parent=catalog&search_id=14687397
+https://googlecourses.qwiklabs.com/focuses/18080?catalog_rank=%7B%22rank%22%3A82%2C%22num_filters%22%3A1%2C%22has_search%22%3Atrue%7D&parent=catalog&search_id=14687398
+https://googlecourses.qwiklabs.com/focuses/12419?catalog_rank=%7B%22rank%22%3A101%2C%22num_filters%22%3A1%2C%22has_search%22%3Atrue%7D&parent=catalog&search_id=14687404
+https://googlecourses.qwiklabs.com/quests/130
+https://googlecourses.qwiklabs.com/focuses/12417?catalog_rank=%7B%22rank%22%3A102%2C%22num_filters%22%3A1%2C%22has_search%22%3Atrue%7D&parent=catalog&search_id=14687404
+
+
 - [Ingesting data from a file into BigQuery](#ingesting-data-from-a-file-into-bigquery)
 - [Transforming data in Dataflow](#transforming-data-in-dataflow)
 - [Joining file and BigQuery datasets in Dataflow](#joining-file-and-bigquery-datasets-in-dataflow)
